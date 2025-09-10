@@ -63,4 +63,13 @@ public class AddrBookController {
 		return "redirect:addrbook_list.do";
 	}
 	
+	@RequestMapping("/update.do")
+	public String update(AddrBookVO ab) throws Exception {
+		System.out.println(ab);
+		dao.updateDB(ab);
+		
+		return "redirect:addrbook_list.do";
+		
+	}
+	
 }
