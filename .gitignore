@@ -25,3 +25,7 @@ replay_pid*
 /target/
 
 .metadata
+/.classpath
+/.factorypath
+/.gitignore
+/.settings/
